@@ -1,0 +1,303 @@
+/* 
+0.25,0.5,0.75,1.25,2.0,3.25,5.25,8.5 ,13.75,22.25
+
+0.5 ,1.0,1.5 ,2.5 ,4.0,6.5 ,10.5,17.0,27.5 ,44.5
+ 
+1   ,2  ,3   ,5   ,8  ,13  ,21  ,34  ,55   ,89
+
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 25%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 3.25rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  justify-self: center;
+}
+
+.btn {
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 2rem 3.25rem;
+  border-radius: 256rem;
+  transition: all 0.3s;
+  font-size: 4rem;
+}
+
+.btn-primary {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.btn-secondary {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+}
+
+.btn-tertiary {
+  color: #fff;
+  background-color: #45260a;
+}
+
+.color-primary {
+  color: #cf711f;
+}
+
+ion-icon {
+  font-size: inherit;
+  color: #cf711f;
+  /* --ionicon-stroke-width: 1rem; */
+}
+
+.heading-primary {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  /* letter-spacing: -1px; */
+}
+
+.heading-secondary {
+  font-size: 6.5rem;
+}
+
+.heading-tertiary {
+  font-size: 5.25rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #cf711f;
+}
+
+.background-primary {
+  background-color: #fdf2e9;
+}
+
+.nav-logo button {
+  font-size: 8rem;
+}
+
+.nav-logo {
+  height: 5rem;
+}
+
+.nav-item:link,
+.nav-item:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 4rem;
+  transition: all 0.3s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #cf711f;
+}
+
+.delivered-image {
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 50%;
+  border: 0.125rem solid #fdf2e9;
+  margin-right: -4rem;
+}
+
+.delivered-image:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.featured-heading {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.featured-image {
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.step-number {
+  font-size: 8rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.step-image {
+  max-width: 40%;
+  background: ;
+}
+
+.meals {
+  text-align: center;
+}
+
+.meal {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
+  overflow: hidden;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-1.5rem);
+}
+
+.meal img {
+  max-width: 100%;
+}
+
+.vegetarian {
+  background-color: #51cf66;
+  color: #fff;
+}
+.vegan {
+  background-color: #94d82d;
+  color: #fff;
+}
+.paleo {
+  background-color: #ffd43b;
+  color: #fff;
+}
+
+.meal-tag {
+  font-size: 3rem;
+  padding: 1.25rem 2rem;
+  border-radius: 256rem;
+}
+
+.diets {
+  align-items: center;
+}
+
+.meal-link:hover {
+  text-decoration: none;
+}
+
+.testimonial img {
+  width: 13.75rem;
+  height: 13.75rem;
+  border-radius: 50%;
+  /* align-self: start; */
+}
+
+.gallery img {
+  max-width: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.gallery img:hover {
+  transform: scale(0.95);
+}
+
+.pricing-plan {
+  align-items: center;
+  border: solid 0.5rem #fdf2e9;
+  /* padding: 8% 13%; */
+  border-radius: 3rem;
+}
+
+.pricing-plan .headings {
+  text-align: center;
+}
+
+.price {
+  font-size: 8rem;
+}
+
+.pricing-text {
+  text-align: center;
+}
+
+.input-group {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.input-group input,
+.input-group select {
+  color: rgb(69, 38, 10);
+  height: 10.5rem;
+  border: none;
+  border-radius: 256rem;
+  background-color: #fdf2e9;
+  padding: 2rem 3.25rem;
+  font-size: inherit;
+  font-weight: inherit;
+  width: auto;
+}
+
+.cta-form button:hover {
+  color: black;
+  background-color: white;
+}
+
+.feature ion-icon {
+  padding: 3rem;
+  border-radius: 50%;
+}
+
+.feature-heading {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.footer-heading {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.footer-logo {
+  height: 4rem;
+}
+
+.social-links {
+  font-size: 5rem;
+}
+
+.footer-link:link,
+.footer-link:visited,
+.contacts,
+.copyright {
+  text-decoration: none;
+  color: rgba(69, 38, 10, 0.8);
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: none;
+  color: rgba(69, 38, 10, 1);
+}

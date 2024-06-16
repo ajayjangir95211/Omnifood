@@ -1,0 +1,350 @@
+.flex-row-primary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+}
+
+.flex-row-secondary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+.flex-row-tertiary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.flex-col-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.flex-col-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.flex-col-tertiary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-primary {
+  display: grid;
+  gap: 8rem;
+}
+
+.grid-tertiary {
+  display: grid;
+  gap: 2rem;
+}
+
+section {
+  padding: 5% 8%;
+}
+
+.navigation {
+  padding: 3% 5%;
+}
+
+.footer {
+  padding: 3% 5%;
+}
+
+.nav-logo {
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.full-view {
+  height: 100vh;
+}
+
+.hero {
+  grid-template-columns: 1fr;
+}
+
+.hero-text {
+  align-items: center;
+  text-align: center;
+}
+
+.hero-description {
+  padding: 0 10.5%;
+}
+
+.hero-image {
+  max-width: 87.5%;
+  align-self: center;
+}
+
+.btn-row,
+.delivered-meals {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-images {
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 5%;
+}
+
+.step {
+  grid-template-columns: 1fr;
+}
+
+.meals-container {
+  grid-template-columns: 1fr;
+}
+
+.meal-description {
+  margin-bottom: 4rem;
+}
+
+.testimonials-container {
+  grid-template-columns: 1fr;
+}
+
+.testimonials {
+  grid-template-columns: 1fr;
+}
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-plan {
+  padding: 3% 5%;
+}
+
+.features {
+  grid-template-columns: 1fr;
+}
+
+.cta-container {
+  border-radius: 3rem;
+  overflow: hidden;
+  background-color: #e98f3f;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cta-image {
+  background-image: url("./img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text {
+  padding: 5% 8%;
+}
+
+.cta-form {
+  grid-template-columns: 1fr;
+  margin-bottom: 8rem;
+}
+
+.footer-container {
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.nav-col {
+  order: -1;
+  grid-column: span 2;
+}
+
+.logo-col,
+.address-col {
+  grid-column: span 3;
+}
+
+@media (min-width: 500px) {
+  .step {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .step:nth-child(odd) .step-text {
+    order: 1;
+  }
+
+  .meals-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .diets {
+    grid-column: 1/-1;
+  }
+}
+
+@media (min-width: 850px) {
+  html {
+    font-size: 28.125%;
+  }
+
+  .step-text {
+    align-self: center;
+  }
+
+  .step-number {
+    font-size: 13rem;
+  }
+
+  .cta-container {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cta-image {
+    order: 1;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    gap: 4rem;
+  }
+
+  .menu,
+  .close {
+    display: none;
+  }
+
+  .full-view {
+    height: auto;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text {
+    align-items: start;
+    text-align: left;
+  }
+
+  .hero-description {
+    padding: 0;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+
+  .nav-col {
+    order: 0;
+    grid-column: span 1;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .flex-col-primary {
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+  }
+
+  .flex-col-secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 6.5rem;
+  }
+
+  section {
+    padding: 3% 13%;
+  }
+
+  .meals-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: span 1;
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: start;
+  }
+
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-form button {
+    align-self: end;
+  }
+}
