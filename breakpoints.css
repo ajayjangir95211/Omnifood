@@ -52,6 +52,11 @@ body {
   gap: 8rem;
 }
 
+.grid-secondary {
+  display: grid;
+  gap: 4rem;
+}
+
 .grid-tertiary {
   display: grid;
   gap: 2rem;
