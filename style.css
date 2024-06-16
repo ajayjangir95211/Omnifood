@@ -233,21 +233,19 @@ ion-icon {
 }
 
 .input-group {
-  font-size: 4rem;
   font-weight: 500;
 }
 
 .input-group input,
 .input-group select {
   color: rgb(69, 38, 10);
-  height: 10.5rem;
+  height: 8rem;
   border: none;
   border-radius: 256rem;
   background-color: #fdf2e9;
   padding: 2rem 3.25rem;
   font-size: inherit;
   font-weight: inherit;
-  width: auto;
 }
 
 .cta-form button:hover {

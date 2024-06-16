@@ -159,12 +159,16 @@ section {
   border-radius: 3rem;
   overflow: hidden;
   background-color: #e98f3f;
-  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1.5fr;
 }
 
 .cta-image {
-  background-image: url("./img/eating.jpg");
+  background-image: linear-gradient(
+      45deg,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("./img/eating.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -175,7 +179,7 @@ section {
 
 .cta-form {
   grid-template-columns: 1fr;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 }
 
 .footer-container {
@@ -191,6 +195,12 @@ section {
 .logo-col,
 .address-col {
   grid-column: span 3;
+}
+
+@media (min-width: 400px) {
+  .cta-container {
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 @media (min-width: 500px) {
@@ -223,6 +233,15 @@ section {
   .diets {
     grid-column: 1/-1;
   }
+
+  .cta-container {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cta-image {
+    order: 1;
+  }
 }
 
 @media (min-width: 850px) {
@@ -236,15 +255,6 @@ section {
 
   .step-number {
     font-size: 13rem;
-  }
-
-  .cta-container {
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr;
-  }
-
-  .cta-image {
-    order: 1;
   }
 
   .navigation {
@@ -346,9 +356,9 @@ section {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .cta-container {
+  /* .cta-container {
     grid-template-columns: 2fr 1fr;
-  }
+  } */
 
   .cta-form {
     grid-template-columns: 1fr 1fr;
