@@ -12,16 +12,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 25%;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-size: 3.25rem;
-}
-
 ul {
   list-style: none;
 }
