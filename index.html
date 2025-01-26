@@ -33,11 +33,12 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
+
   <body>
     <header class="header background-primary">
       <nav class="navigation">
         <div class="flex-row-secondary nav-logo">
-          <a href="/" class="logo">
+          <a href="#" class="logo">
             <img
               class="nav-logo"
               src="./img/omnifood-logo.png"
@@ -275,7 +276,9 @@
         </div>
       </div>
       <div>
-        <a class="meal-link color-primary" href="#">See all recipes &rarr;</a>
+        <a class="meal-link color-primary" href="javascript:void(0)"
+          >See all recipes &rarr;</a
+        >
       </div>
     </section>
     <section
@@ -368,7 +371,7 @@
               recipes
             </li>
           </ul>
-          <a href="#" class="btn btn-primary">Start eating well</a>
+          <a href="#cta" class="btn btn-primary">Start eating well</a>
         </div>
         <div class="pricing-plan background-primary flex-col-primary">
           <div class="headings flex-col-secondary">
@@ -394,7 +397,7 @@
               recipes
             </li>
           </ul>
-          <a href="#" class="btn btn-primary">Start eating well</a>
+          <a href="#cta" class="btn btn-primary">Start eating well</a>
         </div>
       </div>
       <div class="pricing-text">
@@ -458,7 +461,11 @@
             eating well today. You can cancel or pause anytime. And the first
             meal is on us!
           </p>
-          <form action="/" method="post" class="cta-form grid-tertiary">
+          <form
+            method="post"
+            class="cta-form grid-tertiary"
+            onsubmit="event.preventDefault();"
+          >
             <div class="input-group flex-col-tertiary">
               <label for="full-name">Full Name</label>
               <input
@@ -509,17 +516,17 @@
 
           <ul class="social-links flex-row-secondary">
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="javascript:void(0)"
                 ><ion-icon name="logo-instagram"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="javascript:void(0)"
                 ><ion-icon name="logo-facebook"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="javascript:void(0)"
                 ><ion-icon name="logo-twitter"></ion-icon
               ></a>
             </li>
@@ -551,29 +558,61 @@
         <nav class="nav-col flex-col-secondary">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav flex-col-tertiary">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)"
+                >Create account</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">Sign in</a>
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">iOS app</a>
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">Android app</a>
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-col flex-col-secondary">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav flex-col-tertiary">
-            <li><a class="footer-link" href="#">About Omnifood</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Cooking partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)"
+                >About Omnifood</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">For Business</a>
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)"
+                >Cooking partners</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">Careers</a>
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-col flex-col-secondary">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav flex-col-tertiary">
-            <li><a class="footer-link" href="#">Recipe directory </a></li>
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)"
+                >Recipe directory
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)">Help center</a>
+            </li>
+            <li>
+              <a class="footer-link" href="javascript:void(0)"
+                >Privacy &amp; terms</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
